@@ -6,9 +6,9 @@ div.todo-list-container {
   
     & > div {
       margin: 20px;
-      background: white;
+      background: rgb(226, 193, 101);
       padding: 30px;
-      border: 1px solid black;
+      border: 1px solid rgb(197, 19, 19);
       & > div.create-task > form > div {
         display:flex;
         flex-direction: column;
@@ -22,8 +22,9 @@ div.todo-list-container {
         grid-template-columns: 1fr;
         & > div {
           padding: 20px;
-          font-size: 14px;
-          box-shadow: 4px 4px 7px 0px #b4b4b4;
+          font-size: 18px;
+          
+          box-shadow: 4px 4px 7px 0px #3126c9;
           border: 0.5px solid black;
           margin: 10px 0;
           display: flex;
