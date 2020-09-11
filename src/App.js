@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 /* Aca importo los componentes que voy agregando */
-import NavBar from './components/NavBar';
+// import NavBar from './components/NavBar';
 import Jumbotron from './components/Jumbotron';
 import { CartIconBoton } from './components/CartIconBoton';
 import Home from './components/Home';
@@ -13,8 +13,7 @@ import Contador from './components/Contador';
 
 import ContadorComp from './components/ContadorCompuesto';
 // import { CartIcon } from './components/CartIcon';
-import './components/PromiseBase.js';
-
+import TodoList from './components/TodoList/TodoList';
 
 
 
@@ -24,9 +23,8 @@ function App() {
       <header className="App-header">
 
       <Home pila="Pibe"/>
-
-
-      <NavBar/>
+     <TodoList/>
+      <itemList/>
       <img src={logo} className="App-logo" alt="logo" />
       <br/>
       <CartIconBoton/>
