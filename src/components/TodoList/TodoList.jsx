@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "@material-ui/core";
-
-import "./index.scss";
+import "./Index.scss";
 import CreadorDeTareas from "./CreadorDeTareas";
 
 class TodoList extends React.Component {
