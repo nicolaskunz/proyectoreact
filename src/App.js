@@ -14,7 +14,7 @@ import Contador from './components/Contador';
 import ContadorComp from './components/ContadorCompuesto';
 // import { CartIcon } from './components/CartIcon';
 import TodoList from './components/TodoList/TodoList';
-import Item from './components/ItemList/Item.jsx';
+// import Item from './components/ItemList/Item.jsx';
 
 import {ItemList} from './components/ItemList/ItemList';
 
@@ -29,7 +29,7 @@ function App() {
 
       <Home pila="Pibe"/>
 
-    <Item id={1} name={'hola'} />
+
     <ItemList/>
      <TodoList/>
 
