@@ -40,7 +40,12 @@ export function ItemDetailContainer() {
 // Else
     const listaProducto = producto.map((producto) => (
       <Item id={producto.id} name={producto.name} />
-    ));  return <ul>{listaProducto}</ul>;
+    ));  return  <div> 
+      
+      <ul>{listaProducto}</ul> 
+      
+    </div>   ;
+    
 
   }
 

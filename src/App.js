@@ -1,16 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-/* Aca importo los componentes que voy agregando */
 // import NavBar from './components/NavBar';
 import Jumbotron from './components/Jumbotron';
 import { CartIconBoton } from './components/CartIconBoton';
 import Home from './components/Home';
 import Form from './components/Form';
 import Imagen from './components/Imagen';
-import Contador from './components/Contador';
-
+// import Contador from './components/Contador';
 import ContadorComp from './components/ContadorCompuesto';
 // import { CartIcon } from './components/CartIcon';
 import TodoList from './components/TodoList/TodoList';
@@ -18,8 +15,7 @@ import TodoList from './components/TodoList/TodoList';
 
 import {ItemList} from './components/ItemList/ItemList';
 import {ItemDetailContainer} from './components/ItemDetailContainer';
-
-
+import {ItemDetail} from './components/ItemDetail';
 
 
 function App() {
@@ -30,8 +26,8 @@ function App() {
       <Home pila="Pibe"/>
 
       <ItemDetailContainer/>
+      <ItemDetail/>
 
-    <ItemList/>
      <TodoList/>
 
       <img src={logo} className="App-logo" alt="logo" />
@@ -42,9 +38,10 @@ function App() {
       <br/>
       <Form/>
 
+      <ItemList/>
       <Imagen/>
 
-      <Contador/>
+
 
      
     <ContadorComp/>
