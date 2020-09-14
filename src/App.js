@@ -15,7 +15,7 @@ import TodoList from './components/TodoList/TodoList';
 
 import {ItemList} from './components/ItemList/ItemList';
 import {ItemDetailContainer} from './components/ItemDetailContainer';
-import {ItemDetail} from './components/ItemDetail';
+// import {ItemDetail} from './components/ItemDetail';
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
       <Home pila="Pibe"/>
 
       <ItemDetailContainer/>
-      <ItemDetail/>
+
 
      <TodoList/>
 

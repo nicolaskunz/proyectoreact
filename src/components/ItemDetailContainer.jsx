@@ -1,6 +1,5 @@
 import React, { useEffect, useState }  from 'react';
-import Item from './ItemList/Item.jsx';
-
+import {ItemDetail} from './ItemDetail';
 
 export function ItemDetailContainer() {
    
@@ -16,6 +15,7 @@ export function ItemDetailContainer() {
         return setTimeout(() => {
           const fakeList = [
             { id: "2", name: "celular" },
+            { id: "7", name: "Lavarropas" }
           ];        
           
           console.log('Si lees esto es por uqe funciona');
@@ -39,7 +39,7 @@ export function ItemDetailContainer() {
     }
 // Else
     const listaProducto = producto.map((producto) => (
-      <Item id={producto.id} name={producto.name} />
+      <ItemDetail id={producto.id} name={producto.name} />
     ));  return  <div> 
       
       <ul>{listaProducto}</ul> 

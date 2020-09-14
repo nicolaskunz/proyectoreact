@@ -1,18 +1,14 @@
-import React, { useEffect, useState }  from 'react';
+import React from 'react';
 
 import ContadorComp from './ContadorCompuesto.jsx';
 import Item from './ItemList/Item.jsx';
 import {BotonCompra} from './BotonCompra.jsx';
 
-export function ItemDetail() {
-
-    const Producto = [
-        { id: "2", name: "celular" },
-      ];    
+export function ItemDetail(props) {
 
       return  <div> 
       <div> 
-    <Item Producto={Producto}/>
+    <Item id={props.id} name={props.name}/>
     </div>
     <ContadorComp/>
     <BotonCompra/>
