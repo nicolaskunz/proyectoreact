@@ -28,7 +28,7 @@ export function ItemDetailContainer() {
 
     }; 
 
-    // El UseEffect ejecuta la funcion fnWithPromise, que le pasa "fakelist" Como prop de "Productos", que setea el useState con "Productos" 
+    // El UseEffect ejecuta la funcion fnWithPromise, que le pasa "fakelist" Como prop de "Productos", que setea el State "Productos" con la info de "fakelist"
     useEffect(() => {
       fnWithPromise().then((producto) => setProducto(producto));
     }, []);  
@@ -39,8 +39,10 @@ export function ItemDetailContainer() {
     }
 // Else
     const listaProducto = producto.map((producto) => (
+// Listaproducto trae una un segundo array ya mapeado que pasa como prop al componente que trae
       <ItemDetail id={producto.id} name={producto.name} />
-    ));  return  <div> 
+// El return devuelve una lista donde cada componente del map se renderiza en un compnente itemdetail de esa lista.
+));  return  <div> 
       
       <ul>{listaProducto}</ul> 
       
