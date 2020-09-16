@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import NavBar from './components/NavBar';
+import NavBar from './components/NavBar';
 import Jumbotron from './components/Jumbotron';
 import { CartIconBoton } from './components/CartIconBoton';
 import Home from './components/Home';
@@ -15,40 +15,47 @@ import TodoList from './components/TodoList/TodoList';
 
 import {ItemList} from './components/ItemList/ItemList';
 import {ItemDetailContainer} from './components/ItemDetailContainer';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { Switch } from '@material-ui/core';
 // import {ItemDetail} from './components/ItemDetail';
 
 
 function App() {
   return (
     <div className="App" >
-      <header className="App-header">
+    <header className="App-header">
 
-      <Home pila="Pibe"/>
+<BrowserRouter>
+     <Switch>
+      <Route exact path='/'>
+    <NavBar/>
+    <Home pila="Pibe"/>
 
-      <ItemDetailContainer/>
-
-
-     <TodoList/>
-
-      <img src={logo} className="App-logo" alt="logo" />
-      <br/>
-      <CartIconBoton/>
-      <br/>
-      <Jumbotron/>
-      <br/>
-      <Form/>
-
-      <ItemList/>
-      <Imagen/>
+    <ItemDetailContainer/>
 
 
+   <TodoList/>
 
-     
-    <ContadorComp/>
+    <img src={logo} className="App-logo" alt="logo" />
+    <br/>
+    <CartIconBoton/>
+    <br/>
+    <Jumbotron/>
+    <br/>
+    <Form/>
+    </Route>
+    <Route path='/ItemList'>
+    <ItemList/>
+    </Route>
 
-      </header>
-    </div>
-  );
+    <Imagen/>
+  <ContadorComp/>
+
+  </Switch>
+  </BrowserRouter>
+    </header>
+  </div>
+);
 }
 
 export default App;
