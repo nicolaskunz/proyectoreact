@@ -14,9 +14,9 @@ import TodoList from './components/TodoList/TodoList';
 // import Item from './components/ItemList/Item.jsx';
 
 import {ItemList} from './components/ItemList/ItemList';
-import {ItemDetailContainer} from './components/ItemDetailContainer';
-import { BrowserRouter, Route } from 'react-router-dom';
-import { Switch } from '@material-ui/core';
+// import {ItemDetailContainer} from './components/ItemDetailContainer';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+// import { Switch } from '@material-ui/core';
 // import {ItemDetail} from './components/ItemDetail';
 
 
@@ -31,7 +31,7 @@ function App() {
     <NavBar/>
     <Home pila="Pibe"/>
 
-    <ItemDetailContainer/>
+
 
 
    <TodoList/>
