@@ -1,7 +1,7 @@
 import React, { useEffect, useState }  from 'react';
 import {ItemDetail} from './ItemDetail';
 
-export function ItemDetailContainer() {
+export function ItemDetailContainer2(props) {
    
     const [producto, setProducto] = useState([]);  
     const [loading, setLoading] = useState(false);
@@ -14,11 +14,10 @@ export function ItemDetailContainer() {
         setLoading(true);
         return setTimeout(() => {
           const fakeList = [
-            { id: "2", name: "celular"},
-            { id: "7", name: "Lavarropas"}
+            { id: props.id, name: props.name, stock: props.stock},
+
           ];        
-          
-          console.log('Si lees esto es por uqe funciona');
+
           setLoading(false);
           // Fakelist es la variable donde esta alojada la lista
           return resolve(fakeList);

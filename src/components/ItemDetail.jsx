@@ -11,6 +11,8 @@ export function ItemDetail(props) {
     <Item id={props.id} name={props.name}/>
     </div>
     <ContadorComp/>
+    <div>Stock disponible: {props.stock}
+    </div>
     <BotonCompra/>
     </div>   ;
 
