@@ -12,7 +12,6 @@ import ContadorComp from './components/ContadorCompuesto';
 // import { CartIcon } from './components/CartIcon';
 import TodoList from './components/TodoList/TodoList';
 // import Item from './components/ItemList/Item.jsx';
-
 import {ItemList} from './components/ItemList/ItemList';
 // import {ItemDetailContainer} from './components/ItemDetailContainer';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';

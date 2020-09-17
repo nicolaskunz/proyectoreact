@@ -2,6 +2,8 @@ import React from "react";
 // llamar al usestate sino no funciona
 import { useState } from 'react';
 
+
+
 function Contador() {
 
     //  USE STATE DEFINE EL VALOR BASE
