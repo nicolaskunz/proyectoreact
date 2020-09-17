@@ -10,9 +10,8 @@ export function ItemDetail(props) {
       <div> 
     <Item id={props.id} name={props.name}/>
     </div>
-    <ContadorComp/>
-    <div>Stock disponible: {props.stock}
-    </div>
+    <ContadorComp stock={props.stock}/>
+    <div>Stock disponible: {props.stock}. </div>
     <BotonCompra/>
     </div>   ;
 

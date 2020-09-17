@@ -22,7 +22,7 @@ export function ItemDetailContainer2(props) {
           // Fakelist es la variable donde esta alojada la lista
           return resolve(fakeList);
         
-        }, 2000);
+        }, 3000);
       });
 
     }; 

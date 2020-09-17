@@ -4,7 +4,7 @@ import { BotonContador } from './BotonContador.jsx'
 
 
 
-function ContadorComp() {
+function ContadorComp(props) {
     const [count, setCount] = useState(0) ;
     
 
@@ -13,7 +13,7 @@ function ContadorComp() {
         <p>Contador:{count}.</p>
 
             <BotonContador handleClick={()=> {if (count > 0) {setCount(count -1);} else {alert('La cantidad no puede ser menor a 0')};}} signo="-" />
-            <BotonContador handleClick={()=> {if (count <= 4) {setCount(count +1);} else {alert('La cantidad no puede ser mayor a 5')};}} signo="+" />
+            <BotonContador handleClick={()=> {if (count < props.stock) {setCount(count +1);} else {alert("La cantidad no puede superar el stock disponible de " + props.stock + " unidades")};}} signo="+" />
 
 
       </div>
