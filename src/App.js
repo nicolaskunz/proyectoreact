@@ -10,7 +10,7 @@ import Imagen from './components/Imagen';
 // import Contador from './components/Contador';
 import ContadorComp from './components/ContadorCompuesto';
 // import { CartIcon } from './components/CartIcon';
-import TodoList from './components/TodoList/TodoList';
+// import TodoList from './components/TodoList/TodoList';
 // import Item from './components/ItemList/Item.jsx';
 import {ItemList} from './components/ItemList/ItemList';
 // import {ItemDetailContainer} from './components/ItemDetailContainer';
@@ -30,12 +30,7 @@ function App() {
     <NavBar/>
     <Home pila="Pibe"/>
 
-
-
-
-   <TodoList/>
-
-    <img src={logo} className="App-logo" alt="logo" />
+ <img src={logo} className="App-logo" alt="logo" />
     <br/>
     <CartIconBoton/>
     <br/>

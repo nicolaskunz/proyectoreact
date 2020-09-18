@@ -4,29 +4,13 @@ import { CartIcon } from './CartIcon';
 
 
 const NavBar = () => 
-<div>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="http://google.com">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="http://google.com">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://google.com">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://google.com"><CartIcon/></a>
-      </li>    
-    </ul>
-  </div>  
+<nav class="nav nav-pills nav-fill">
+  <a class="nav-item nav-link active" href="http://google.com">Active 💣 </a>
+  <a class="nav-item nav-link" href="http://google.com">Link</a>
+  <a class="nav-item nav-link" href="http://google.com">Link</a>
+  <a class="nav-item nav-link disabled" href="http://google.com">Disabled</a>
 </nav>
-
-</div>
 
 export default NavBar;
 
