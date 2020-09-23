@@ -17,7 +17,7 @@ import {ItemList} from './components/ItemList/ItemList';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import { Switch } from '@material-ui/core';
 // import {ItemDetail} from './components/ItemDetail';
-
+import Cart from './components/Cart.jsx';
 
 function App() {
   return (
@@ -34,9 +34,7 @@ function App() {
     <br/>
     <CartIconBoton/>
     <br/>
-    <Jumbotron/>
-    <br/>
-    <Form/>
+    
     </Route>
     <Route path='/ItemList'>
     <ItemList/>
