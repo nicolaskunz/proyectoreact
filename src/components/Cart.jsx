@@ -4,12 +4,11 @@ import {ThemeContext} from '../Context/cartContext';
 
 
 const Cart = () => {
-    const [cart, setCart] = useContext (ThemeContext);
-
+   
     return(
         <div>
     <h2>Carrito</h2>
-    <span>Items en carrito: {cart.lenght}</span>
+    <span>Items en carrito: </span>
     <br></br>
     <span>Precio Total: 0 </span>
         </div>
@@ -17,3 +16,7 @@ const Cart = () => {
 }
 
 export default Cart;
+
+//  linea debajo del arrow function
+// const [cart, setCart] = useContext (ThemeContext);
+// {cart.lenght} en carrito

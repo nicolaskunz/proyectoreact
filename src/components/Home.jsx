@@ -16,6 +16,7 @@ class Home extends React.Component {
 
     
     <ItemDetailContainer2 id="24" name="Television" stock='4'/>
+    <ItemDetailContainer2 id="20" name="Celular" stock='7' />
     </div>
   }
 }

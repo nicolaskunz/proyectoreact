@@ -2,11 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
-import Jumbotron from './components/Jumbotron';
+// import Jumbotron from './components/Jumbotron';
 import { CartIconBoton } from './components/CartIconBoton';
 import Home from './components/Home';
-import Form from './components/Form';
-import Imagen from './components/Imagen';
+// import Form from './components/Form';
+// import Imagen from './components/Imagen';
 // import Contador from './components/Contador';
 import ContadorComp from './components/ContadorCompuesto';
 // import { CartIcon } from './components/CartIcon';
@@ -18,6 +18,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import { Switch } from '@material-ui/core';
 // import {ItemDetail} from './components/ItemDetail';
 import Cart from './components/Cart.jsx';
+// 
 
 function App() {
   return (
@@ -25,22 +26,28 @@ function App() {
     <header className="App-header">
 
 <BrowserRouter>
-     <Switch>
-      <Route exact path='/'>
-    <NavBar/>
-    <Home pila="Pibe"/>
+  <NavBar/>
 
- <img src={logo} className="App-logo" alt="logo" />
+    <Switch>
+    <Route exact path='/'>
+    <Home pila="USER"/>
+
+ 
     <br/>
     <CartIconBoton/>
     <br/>
-    
     </Route>
+
     <Route path='/ItemList'>
     <ItemList/>
     </Route>
 
-    <Imagen/>
+    <Route path='/cart'>
+    <Cart/>
+    <ItemList/>
+    
+    </Route>
+ 
   <ContadorComp/>
 
   </Switch>
