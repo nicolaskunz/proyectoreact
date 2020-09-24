@@ -14,7 +14,7 @@ import ContadorComp from './components/ContadorCompuesto';
 // import Item from './components/ItemList/Item.jsx';
 import {ItemList} from './components/ItemList/ItemList';
 // import {ItemDetailContainer} from './components/ItemDetailContainer';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 // import { Switch } from '@material-ui/core';
 // import {ItemDetail} from './components/ItemDetail';
 import Cart from './components/Cart.jsx';
@@ -32,7 +32,7 @@ function App() {
     <Route exact path='/'>
     <Home pila="USER"/>
 
- 
+   <Link to="/cart">Hola</Link>
     <br/>
     <CartIconBoton/>
     
