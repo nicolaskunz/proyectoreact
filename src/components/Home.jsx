@@ -13,7 +13,7 @@ class Home extends React.Component {
 
     <h2>Bienvenido {this.props.pila}!</h2>
     <Link to="/item/:id"> <ItemDetailContainer2 id="24" name="Television" stock='4'/></Link>
-    <Link to="/item/:id"> <ItemDetailContainer2 id="20" name="Celular" stock='7' /></Link>
+    <Link to="/item/20"> <ItemDetailContainer2 id="20" name="Celular" stock='7' /></Link>
 
     </div>
   }

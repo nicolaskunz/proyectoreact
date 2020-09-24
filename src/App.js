@@ -32,7 +32,6 @@ function App() {
     <Route exact path='/'>
     <Home pila="USER"/>
 
-   <Link to="/cart">Hola</Link>
     <br/>
     <CartIconBoton/>
     
