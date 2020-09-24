@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
 // import Jumbotron from './components/Jumbotron';
@@ -35,6 +35,7 @@ function App() {
  
     <br/>
     <CartIconBoton/>
+    
     <br/>
     </Route>
 
@@ -43,9 +44,7 @@ function App() {
     </Route>
 
     <Route path='/cart'>
-    <Cart/>
-    <ItemList/>
-    
+    <Cart/>    
     </Route>
  
   <ContadorComp/>
@@ -58,26 +57,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-/*
-
-Funcion Base de App
-
-<img src={logo} className="App-logo" alt="logo" />
-<p>
-  Edit <code>src/App.js</code> and save to reload.
-</p>
-<a
-  className="App-link"
-  href="https://reactjs.org"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Learn React
-</a>
-*/

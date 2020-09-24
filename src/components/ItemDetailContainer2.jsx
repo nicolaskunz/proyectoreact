@@ -1,5 +1,6 @@
 import React, { useEffect, useState }  from 'react';
 import {ItemDetail} from './ItemDetail';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 export function ItemDetailContainer2(props) {
    
