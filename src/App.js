@@ -30,7 +30,7 @@ function App() {
 
     <Switch>
     <Route exact path='/'>
-    <Home pila="USER"/>
+    <Home class="prod" pila="USER"/>
 
     <br/>
     <CartIconBoton/>

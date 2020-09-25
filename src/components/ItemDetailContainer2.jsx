@@ -1,6 +1,7 @@
 import React, { useEffect, useState }  from 'react';
 import {ItemDetail} from './ItemDetail';
-
+import { CircularProgress } from '@material-ui/core';
+import '../App.css';
 
 export function ItemDetailContainer2(props) {
    
@@ -35,14 +36,14 @@ export function ItemDetailContainer2(props) {
     
 
     if(loading) {
-      return <div>Loading...</div>
+      return <CircularProgress/>
     }
 // Else
     const listaProducto = producto.map((producto) => (
 // Listaproducto trae una un segundo array ya mapeado que pasa como prop al componente que trae
       <ItemDetail id={producto.id} name={producto.name} stock={producto.stock} />
 // El return devuelve una lista donde cada componente del map se renderiza en un compnente itemdetail de esa lista.
-));  return  <div> 
+));  return  <div class="prod"> 
       
       <ul>{listaProducto}</ul> 
       

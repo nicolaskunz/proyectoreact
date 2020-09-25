@@ -1,6 +1,6 @@
 import React, { useEffect, useState }  from 'react';
 import Item from './Item.jsx';
-
+// import { Link } from 'react-router-dom';
 
 export function ItemList() {
    
@@ -32,6 +32,6 @@ export function ItemList() {
     
     const listaProductos = productos.map((productos) => (
       <Item id={productos.id} name={productos.name} />
-    ));  return <ul>{listaProductos}</ul>;
+    ));  return  <ul>{listaProductos}</ul> ;
   }
 

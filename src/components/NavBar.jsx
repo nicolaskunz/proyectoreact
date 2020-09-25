@@ -7,8 +7,7 @@ const NavBar = () =>
 
 <nav class="nav nav-pills nav-fill">
   <a class="nav-item nav-link active" href='/'>Home</a>
-  <a class="nav-item nav-link" href="http://google.com">GOOGLE</a>
-  <a class="nav-item nav-link" href="http://google.com">GOOGLE</a>
+  <a class="nav-item nav-link" href='/ItemList'>Hotsale! 💣</a>
   <a class="nav-item nav-link" href='/cart'><CartIcon/></a>
 </nav>
 
