@@ -7,7 +7,7 @@ function Imagen(props) {
 
 // Import result is the URL of your image
 
-  return <img src="./tv.png" alt={props.img} />;
+  return <img src={props.img} alt={props.img} />;
 }
 
 export default Imagen;
