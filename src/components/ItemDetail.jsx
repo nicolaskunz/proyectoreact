@@ -3,6 +3,7 @@ import React from 'react';
 import ContadorComp from './ContadorCompuesto.jsx';
 import Item from './ItemList/Item.jsx';
 import {BotonCompra} from './BotonCompra.jsx';
+import Imagen from './Imagen';
 
 export function ItemDetail(props) {
 
@@ -10,6 +11,7 @@ export function ItemDetail(props) {
       <div> 
     <Item id={props.id} name={props.name}/>
     </div>
+    <Imagen img={props.img}/>
     <ContadorComp stock={props.stock}/>
     <div>Stock disponible: {props.stock}. </div>
     <BotonCompra/>

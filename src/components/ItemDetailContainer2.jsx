@@ -16,7 +16,7 @@ export function ItemDetailContainer2(props) {
         setLoading(true);
         return setTimeout(() => {
           const fakeList = [
-            { id: props.id, name: props.name, stock: props.stock},
+            { id: props.id, name: props.name, stock: props.stock, img: props.img },
 
           ];        
 
@@ -41,7 +41,7 @@ export function ItemDetailContainer2(props) {
 // Else
     const listaProducto = producto.map((producto) => (
 // Listaproducto trae una un segundo array ya mapeado que pasa como prop al componente que trae
-      <ItemDetail id={producto.id} name={producto.name} stock={producto.stock} />
+      <ItemDetail id={producto.id} name={producto.name} stock={producto.stock} img={producto.img} />
 // El return devuelve una lista donde cada componente del map se renderiza en un compnente itemdetail de esa lista.
 ));  return  <div class="prod"> 
       

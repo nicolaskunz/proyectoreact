@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.png';
+// import Imagen from './Imagen';
 
-console.log(logo); // /logo.84287d09.png
+// console.log(logo); // /logo.84287d09.png
 
-function Imagen() {
+function Imagen(props) {
 
 // Import result is the URL of your image
 
-  return <img src={logo} alt="Logo" />;
+  return <img src="./tv.png" alt={props.img} />;
 }
 
 export default Imagen;
