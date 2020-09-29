@@ -1,6 +1,6 @@
 import React, { useEffect, useState }  from 'react';
 import Item from './Item.jsx';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export function ItemList() {
    
@@ -13,9 +13,9 @@ export function ItemList() {
         return new Promise((resolve, reject) => {
         return setTimeout(() => {
           const fakeList = [
-            { id: "1", name: "producto1" },
-            { id: "7", name: "producto7" },
-            { id: "4", name: "producto4" },
+            { id: "1", name: "Laptop OFERTA" },
+            { id: "7", name: "Monitor OFERTA" },
+            { id: "4", name: "Mouse OFERTA" },
           ];        
           
           // Fakelist es la variable donde esta alojada la lista
@@ -31,7 +31,7 @@ export function ItemList() {
     }, []);  
     
     const listaProductos = productos.map((productos) => (
-      <Item id={productos.id} name={productos.name} />
+      <Link to="/item/:id"><Item id={productos.id} name={productos.name} /></Link> 
     ));  return  <ul>{listaProductos}</ul> ;
   }
 

@@ -1,7 +1,9 @@
 import React, { useEffect, useState }  from 'react';
 import {ItemDetail} from './ItemDetail';
+import Item from './ItemList/Item';
 
-export function ItemDetailContainer() {
+
+export function ItemDetailContainer(props) {
    
     const [producto, setProducto] = useState([]);  
     const [loading, setLoading] = useState(false);
@@ -14,8 +16,7 @@ export function ItemDetailContainer() {
         setLoading(true);
         return setTimeout(() => {
           const fakeList = [
-            { id: "2", name: "celular"},
-            { id: "7", name: "Lavarropas"}
+            { id: props.id, name: props.name, stock: props.stock, img: props.img }
           ];        
           
           console.log('Si lees esto es por uqe funciona');
@@ -40,7 +41,7 @@ export function ItemDetailContainer() {
 // Else
     const listaProducto = producto.map((producto) => (
 // Listaproducto trae una un segundo array ya mapeado que pasa como prop al componente que trae
-      <ItemDetail id={producto.id} name={producto.name} stock={producto.stock} />
+      <Item id={producto.id} name={producto.name} stock={producto.stock} />
 // El return devuelve una lista donde cada componente del map se renderiza en un compnente itemdetail de esa lista.
 ));  return  <div> 
       
