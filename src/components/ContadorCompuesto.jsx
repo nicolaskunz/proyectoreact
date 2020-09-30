@@ -10,7 +10,7 @@ function ContadorComp(props) {
 
     return (
       <div>
-        <p>Contador:{count}.</p>
+        <p>¿Cuantas unidades queres? {count}.</p>
 
             <BotonContador handleClick={()=> {if (count > 0) {setCount(count -1);} else {alert('La cantidad no puede ser menor a 0')};}} signo="-" />
             <BotonContador handleClick={()=> {if (count < props.stock) {setCount(count +1);} else {alert("La cantidad no puede superar el stock disponible de " + props.stock + " unidades")};}} signo="+" />

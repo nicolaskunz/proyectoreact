@@ -1,7 +1,7 @@
 import React, { useEffect, useState }  from 'react';
 import {ItemDetail} from './ItemDetail';
 import Item from './ItemList/Item';
-
+import { CircularProgress } from '@material-ui/core';
 
 export function ItemDetailContainer(props) {
    
@@ -16,7 +16,7 @@ export function ItemDetailContainer(props) {
         setLoading(true);
         return setTimeout(() => {
           const fakeList = [
-            { id: props.id, name: props.name, stock: props.stock, img: props.img }
+            { id: props.id, name: props.name, stock: props.stock, img: props.img },
           ];        
           
           console.log('Si lees esto es por uqe funciona');
@@ -36,7 +36,7 @@ export function ItemDetailContainer(props) {
     
 
     if(loading) {
-      return <div>Loading...</div>
+      return <CircularProgress/>
     }
 // Else
     const listaProducto = producto.map((producto) => (
