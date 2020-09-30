@@ -16,7 +16,7 @@ export function ItemDetailContainer(props) {
         setLoading(true);
         return setTimeout(() => {
           const fakeList = [
-            { id: props.id, name: props.name, stock: props.stock, img: props.img },
+            { id: props.id, name: props.name, stock: props.stock, img: props.img, descripcion: props.descripcion },
           ];        
           
           console.log('Si lees esto es por uqe funciona');

@@ -17,7 +17,7 @@ export function ItemDetail(props) {
      <br/>
     </div>
     <Imagen img={props.img}/>
-    <br/><br/><br/>
+    <br/><br/>
     <Descripcion descripcion={props.descripcion}/>
     <br/>
     <ContadorComp stock={props.stock}/>
